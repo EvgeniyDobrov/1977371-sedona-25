@@ -5,12 +5,12 @@
 {% block main %}
 <main class="main-container main-form">
   <h1 class="visually-hidden">Отзывы</h1>
-  <section class="description--form">
-    <header class="description__header--form">
-      <h2 class="description__title--form">
+  <section class="comment">
+    <header class="comment__header">
+      <h2 class="comment__title">
         Оставьте свой отзыв
       </h2>
-      <p class="description__text--form">
+      <p class="comment__text">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </header>
@@ -111,14 +111,14 @@
         </li>
       </ul>
     </div>
-    <div class="emotions">
-      <label for="emotions" class="emotions__title">Опишите свои эмоции:</label>
-      <textarea class="emotions__field" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
-    </div>
-    <div class="button__form">
-      <button class="button button--form" type="submit">Отправить отзыв</button>
-      <p class="button__text" aria-hidden="true">* — обязательные поля</p>
-    </div>
+    <section class="emotions">
+        <label for="emotions" class="emotions__title">Опишите свои эмоции:</label>
+        <textarea class="emotions__field" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+      <div class="emotions__button">
+        <button class="button button--form" type="submit">Отправить отзыв</button>
+        <p class="emotions__text" aria-hidden="true">* — обязательные поля</p>
+      </div>
+    </section>
   </form>
 </main>
 {% endblock %}
